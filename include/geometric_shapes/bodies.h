@@ -428,6 +428,7 @@ public:
   void computeScaledVerticesFromPlaneProjections();
 
   void correctVertexOrderFromPlanes();
+  Box getBoundingBox();
 
 protected:
 

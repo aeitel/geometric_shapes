@@ -857,6 +857,11 @@ std::vector<double> bodies::ConvexMesh::getDimensions() const
   return std::vector<double>();
 }
 
+bodies::Box bodies::ConvexMesh::getBoundingBox()
+{
+  return bounding_box_;
+}
+
 void bodies::ConvexMesh::computeScaledVerticesFromPlaneProjections()
 {
     // compute the scaled vertices, if needed
